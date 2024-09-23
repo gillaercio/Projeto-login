@@ -2,6 +2,7 @@
 
 :root {
   --verde: #49a09d;
+  --verder-hover: #2d6462;
   --lilas: #5f2c82;
   
 }
@@ -27,7 +28,7 @@ main {
 
 section#login {
   width: 250px;
-  height: 500px;
+  height: 515px;
 
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
@@ -63,4 +64,68 @@ div#form > h1 {
 
 div#form > p {
   font-size: 0.8em;
+}
+
+form > div.campo {
+  background-color: var(--lilas);
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-block: 5px;
+  padding-top: 5px;
+  border-radius: 7px;
+}
+
+div.campo label {
+  display: none;
+}
+
+div.campo i {
+  font-size: .8em;
+  padding-left: 5px;
+}
+
+form > input[type=submit] {
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  background-color: var(--verde);
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+form > input[type=submit]:hover {
+  background-color: var(--verder-hover);
+}
+
+form > a.botao {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  width: 90%;
+  margin: auto;
+  height: 40px;
+  padding-top: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--verde);
+  border-radius: 7px;
+  color: var(--verder-hover);
+  background-color: white;
+  transition: background-color .3s, color .3s;
+}
+
+form > a.botao:hover {
+  background-color: var(--verder-hover);
+  color: white;
+}
+
+form > a.botao > i {
+  font-size: .8em;
 }
